@@ -1,0 +1,13 @@
+<template>
+  <ai-dialog>
+    <ai-dialog-body>
+      <h2>Edit name</h2>
+      <input value.bind="person.name" />
+    </ai-dialog-body>
+
+    <ai-dialog-footer>
+      <button click.trigger="cancelButtonClick()">Cancel</button>
+      <button click.trigger="ok(person)">Ok</button>
+    </ai-dialog-footer>
+  </ai-dialog>
+</template>
